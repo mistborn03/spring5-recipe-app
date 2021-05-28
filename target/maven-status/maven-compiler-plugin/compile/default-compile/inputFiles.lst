@@ -1,1 +1,11 @@
 /Users/arpitjain/Documents/spring5-recipe-app/src/main/java/guru/springframework/Spring5RecipeAppApplication.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/main/java/guru/springframework/repositories/UnitOfMeasureRepository.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/main/java/guru/springframework/domain/Ingredient.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/main/java/guru/springframework/domain/Notes.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/main/java/guru/springframework/controllers/IndexController.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/main/java/guru/springframework/domain/Recipe.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/main/java/guru/springframework/repositories/RecipeRepository.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/main/java/guru/springframework/domain/Category.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/main/java/guru/springframework/repositories/CategoryRepository.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/main/java/guru/springframework/domain/Difficulty.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/main/java/guru/springframework/domain/UnitOfMeasure.java

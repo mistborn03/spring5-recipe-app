@@ -1,40 +1,42 @@
 package guru.springframework.domain;
 
 import javax.persistence.*;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
 public class Category {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String description;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
 
-    @ManyToMany(mappedBy = "categories")
-    private Set<Recipe> recipes;
+  private String description;
 
-    public Long getId() {
-        return id;
-    }
+  @ManyToMany(mappedBy = "categories")
+  private Set<Recipe> recipes;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+  public Long getId() {
+    return id;
+  }
 
-    public String getDescription() {
-        return description;
-    }
+  public void setId(Long id) {
+    this.id = id;
+  }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public Set<Recipe> getRecipes() {
-        return recipes;
-    }
+  public void setDescription(String description) {
+    this.description = description;
+  }
 
-    public void setRecipes(Set<Recipe> recipes) {
-        this.recipes = recipes;
-    }
+  public Set<Recipe> getRecipes() {
+    return recipes;
+  }
+
+  public void setRecipes(Set<Recipe> recipes) {
+    this.recipes = recipes;
+  }
 }

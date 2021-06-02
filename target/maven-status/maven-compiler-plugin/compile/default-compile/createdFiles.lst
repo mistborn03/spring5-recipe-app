@@ -1,11 +1,14 @@
 guru/springframework/Spring5RecipeAppApplication.class
 guru/springframework/repositories/RecipeRepository.class
 guru/springframework/domain/UnitOfMeasure.class
+guru/springframework/service/RecipeService.class
 guru/springframework/domain/Notes.class
 guru/springframework/controllers/IndexController.class
+guru/springframework/bootstrap/RecipeBootstrap.class
 guru/springframework/domain/Ingredient.class
 guru/springframework/repositories/UnitOfMeasureRepository.class
 guru/springframework/domain/Recipe.class
 guru/springframework/repositories/CategoryRepository.class
+guru/springframework/service/RecipeServiceImpl.class
 guru/springframework/domain/Difficulty.class
 guru/springframework/domain/Category.class

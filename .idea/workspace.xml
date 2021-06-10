@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cafa7f8-974d-40ae-a0b6-ac215633554e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/controllers/IndexControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/domain/CategoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/repositories/UnitOfMeasureRepositoryIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/service/RecipeServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guru/springframework/Spring5RecipeAppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/Spring5RecipeAppApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +52,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/src/main/java/guru/springframework" />
@@ -233,7 +225,8 @@
       <workItem from="1623176362222" duration="1514000" />
       <workItem from="1623217372000" duration="317000" />
       <workItem from="1623217718587" duration="360000" />
-      <workItem from="1623218099123" duration="686000" />
+      <workItem from="1623218099123" duration="1587000" />
+      <workItem from="1623351350519" duration="453000" />
     </task>
     <task id="LOCAL-00001" summary="adding JPA entities and relationships">
       <created>1622107013959</created>
@@ -263,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622624895193</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added .circleci">
+      <created>1623350466694</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1623350466694</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +273,8 @@
     <MESSAGE value="adding JPA entities and relationships" />
     <MESSAGE value="Display List of Recipes" />
     <MESSAGE value="Refactoring with project lombok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring with project lombok" />
+    <MESSAGE value="added .circleci" />
+    <option name="LAST_COMMIT_MESSAGE" value="added .circleci" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

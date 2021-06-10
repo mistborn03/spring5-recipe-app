@@ -1,1 +1,5 @@
+guru/springframework/service/RecipeServiceImplTest.class
+guru/springframework/controllers/IndexControllerTest.class
 guru/springframework/Spring5RecipeAppApplicationTests.class
+guru/springframework/repositories/UnitOfMeasureRepositoryIT.class
+guru/springframework/domain/CategoryTest.class

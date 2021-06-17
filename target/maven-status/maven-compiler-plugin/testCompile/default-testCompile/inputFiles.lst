@@ -1,6 +1,17 @@
+/Users/arpitjain/Documents/spring5-recipe-app/src/test/java/guru/springframework/converters/UnitOfMeasureCommandToUnitOfMeasureTest.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/test/java/guru/springframework/converters/IngredientToIngredientCommandTest.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/test/java/guru/springframework/converters/CategoryToCategoryCommandTest.java
 /Users/arpitjain/Documents/spring5-recipe-app/src/test/java/guru/springframework/controllers/IndexControllerTest.java
 /Users/arpitjain/Documents/spring5-recipe-app/src/test/java/guru/springframework/repositories/UnitOfMeasureRepositoryIT.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/test/java/guru/springframework/converters/RecipeToRecipeCommandTest.java
 /Users/arpitjain/Documents/spring5-recipe-app/src/test/java/guru/springframework/controllers/RecipeControllerTest.java
 /Users/arpitjain/Documents/spring5-recipe-app/src/test/java/guru/springframework/domain/CategoryTest.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/test/java/guru/springframework/converters/NotesCommandToNotesTest.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/test/java/guru/springframework/converters/RecipeCommandToRecipeTest.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/test/java/guru/springframework/converters/UnitOfMeasureToUnitOfMeasureCommandTest.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/test/java/guru/springframework/service/RecipeServiceIT.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/test/java/guru/springframework/converters/NotesToNotesCommandTest.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/test/java/guru/springframework/converters/IngredientCommandToIngredientTest.java
 /Users/arpitjain/Documents/spring5-recipe-app/src/test/java/guru/springframework/Spring5RecipeAppApplicationTests.java
+/Users/arpitjain/Documents/spring5-recipe-app/src/test/java/guru/springframework/converters/CategoryCommandToCategoryTest.java
 /Users/arpitjain/Documents/spring5-recipe-app/src/test/java/guru/springframework/service/RecipeServiceImplTest.java

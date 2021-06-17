@@ -5,47 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cafa7f8-974d-40ae-a0b6-ac215633554e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/commands/CategoryCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/commands/IngredientCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/commands/NotesCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/commands/RecipeCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/commands/UnitOfMeasureCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/controllers/RecipeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/CategoryCommandToCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/CategoryToCategoryCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/IngredientCommandToIngredient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/IngredientToIngredientCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/NotesCommandToNotes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/NotesToNotesCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/RecipeCommandToRecipe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/RecipeToRecipeCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/UnitOfMeasureCommandToUnitOfMeasure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/UnitOfMeasureToUnitOfMeasureCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/recipe/show.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/controllers/RecipeControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/converters/CategoryCommandToCategoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/converters/CategoryToCategoryCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/converters/IngredientCommandToIngredientTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/converters/IngredientToIngredientCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/converters/NotesCommandToNotesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/converters/NotesToNotesCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/converters/RecipeCommandToRecipeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/converters/RecipeToRecipeCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/converters/UnitOfMeasureCommandToUnitOfMeasureTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/converters/UnitOfMeasureToUnitOfMeasureCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/service/RecipeServiceIT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring5-recipe-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring5-recipe-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/bootstrap/RecipeBootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/bootstrap/RecipeBootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/domain/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/domain/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/service/RecipeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/service/RecipeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/service/RecipeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/service/RecipeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guru/springframework/service/RecipeServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/service/RecipeServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/IngredientCommandToIngredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/IngredientCommandToIngredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/IngredientToIngredientCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/IngredientToIngredientCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/NotesCommandToNotes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/NotesCommandToNotes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/NotesToNotesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/NotesToNotesCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/RecipeCommandToRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/RecipeCommandToRecipe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,10 +83,10 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="guru.springframework.service" />
       <recent name="guru.springframework.converters" />
       <recent name="guru.springframework.controllers" />
       <recent name="guru.springframework.repositories" />
-      <recent name="guru.springframework.service" />
       <recent name="guru.springframework.domain" />
     </key>
   </component>
@@ -130,7 +97,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IngredientCommandToIngredientTest">
+  <component name="RunManager" selected="JUnit.RecipeServiceIT">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -204,16 +171,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="guru.springframework in spring5-recipe-app" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RecipeServiceIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring5-recipe-app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="guru.springframework.*" />
+          <option name="PATTERN" value="guru.springframework.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="guru.springframework" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="guru.springframework.service" />
+      <option name="MAIN_CLASS_NAME" value="guru.springframework.service.RecipeServiceIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Spring5RecipeAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring5-recipe-app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="guru.springframework.Spring5RecipeAppApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -243,19 +218,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.guru.springframework in spring5-recipe-app" />
       <item itemvalue="JUnit.CategoryCommandToCategoryTest" />
       <item itemvalue="JUnit.NotesCommandToNotesTest" />
       <item itemvalue="JUnit.NotesToNotesCommandTest" />
       <item itemvalue="JUnit.IngredientCommandToIngredientTest" />
+      <item itemvalue="Spring Boot.Spring5RecipeAppApplication" />
+      <item itemvalue="JUnit.RecipeServiceIT" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RecipeServiceIT" />
         <item itemvalue="JUnit.IngredientCommandToIngredientTest" />
         <item itemvalue="JUnit.NotesToNotesCommandTest" />
         <item itemvalue="JUnit.NotesCommandToNotesTest" />
         <item itemvalue="JUnit.CategoryCommandToCategoryTest" />
-        <item itemvalue="JUnit.guru.springframework in spring5-recipe-app" />
       </list>
     </recent_temporary>
   </component>
@@ -290,7 +266,7 @@
       <workItem from="1623389014361" duration="2226000" />
       <workItem from="1623395576906" duration="4803000" />
       <workItem from="1623827741820" duration="2501000" />
-      <workItem from="1623835930216" duration="21060000" />
+      <workItem from="1623835930216" duration="22964000" />
     </task>
     <task id="LOCAL-00001" summary="adding JPA entities and relationships">
       <created>1622107013959</created>
@@ -334,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623351825658</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adding command objects, type converters, tests, and service method">
+      <created>1623952186366</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1623952186366</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +329,8 @@
     <MESSAGE value="Refactoring with project lombok" />
     <MESSAGE value="added .circleci" />
     <MESSAGE value="updated surefire plugin" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated surefire plugin" />
+    <MESSAGE value="adding command objects, type converters, tests, and service method" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding command objects, type converters, tests, and service method" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

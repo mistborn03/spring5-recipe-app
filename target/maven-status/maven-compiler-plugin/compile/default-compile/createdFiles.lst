@@ -8,6 +8,7 @@ guru/springframework/bootstrap/RecipeBootstrap.class
 guru/springframework/domain/Ingredient.class
 guru/springframework/repositories/UnitOfMeasureRepository.class
 guru/springframework/domain/Recipe.class
+guru/springframework/controllers/RecipeController.class
 guru/springframework/repositories/CategoryRepository.class
 guru/springframework/service/RecipeServiceImpl.class
 guru/springframework/domain/Difficulty.class

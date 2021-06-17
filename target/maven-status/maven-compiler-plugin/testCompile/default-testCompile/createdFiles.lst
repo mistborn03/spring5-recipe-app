@@ -3,3 +3,4 @@ guru/springframework/controllers/IndexControllerTest.class
 guru/springframework/Spring5RecipeAppApplicationTests.class
 guru/springframework/repositories/UnitOfMeasureRepositoryIT.class
 guru/springframework/domain/CategoryTest.class
+guru/springframework/controllers/RecipeControllerTest.class

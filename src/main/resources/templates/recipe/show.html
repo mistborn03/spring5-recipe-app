@@ -1,137 +1,172 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8"/>
-  <title>Show Recipe</title>
+    <meta charset="UTF-8"/>
+    <title>Show Recipe</title>
 
-  <!-- Latest compiled and minified CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"
-        th:href = "@{/webjars/bootstrap/5.0.1/css/bootstrap.min.css}">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"
+          th:href="@{/webjars/bootstrap/5.0.1/css/bootstrap.min.css}">
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-          integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-          crossorigin="anonymous"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-          crossorigin="anonymous"
-          th:src="@{/webjars/bootstrap/5.0.1/js/bootstrap.min.js}"> </script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"
+            th:src="@{/webjars/bootstrap/5.0.1/js/bootstrap.min.js}"></script>
 </head>
 <body>
 <div class="container-fluid" style="margin-top: 20px">
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <div class="pannel-group">
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <!--/*@thymesVar id="recipe" type="guru.springframework.domain.Recipe"*/-->
-            <h1 class="panel-title" th:text="${recipe.description}">Recipe Description Here!</h1>
-          </div>
-          <div class="panel-body">
-            <div class="row">
-              <div class="col-md-3">
-                <h5>Categories:</h5>
-              </div>
-              <div class="col-md-9">
-                <ul>
-                  <li th:remove="all">cat one</li>
-                  <li th:remove="all">cat two</li>
-                  <li th:each="category : ${recipe.categories}"  th:text="${category.getDescription()}">cat three</li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3">
-                <h5>Prep Time:</h5>
-              </div>
-              <div class="col-md-3">
-                <p th:text="${(recipe.prepTime) + ' Min'}">30 min</p>
-              </div>
-              <div class="col-md-3">
-                <h5>Difficulty:</h5>
-              </div>
-              <div class="col-md-3">
-                <p th:text="${recipe.difficulty}">Easy</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3">
-                <h5>Cooktime:</h5>
-              </div>
-              <div class="col-md-3">
-                <p th:text="${(recipe.cookTime) + ' Min'}">30 min</p>
-              </div>
-              <div class="col-md-3">
-                <h5>Servings:</h5>
-              </div>
-              <div class="col-md-3">
-                <p th:text="${recipe.servings}">4</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3">
-                <h5>Source:</h5>
-              </div>
-              <div class="col-md-3">
-                <p th:text="${recipe.source}">30 min</p>
-              </div>
-              <div class="col-md-3">
-                <h5>URL:</h5>
-              </div>
-              <div class="col-md-3">
-                <p th:text="${recipe.url}">http://www.example.com</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h1 class="panel-title" >Ingredients</h1>
-          </div>
-          <div class="panel-body">
-            <div class="row">
-              <div class="col-md-12">
-                <ul>
-                  <li th:remove="all">1 Cup of milk</li>
-                  <li th:remove="all">1 Teaspoon of chocolate</li>
-                  <li th:each="ingredient : ${recipe.ingredients}"
-                      th:text="${(ingredient.getAmount()  +
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="pannel-group">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <!--/*@thymesVar id="recipe" type="guru.springframework.domain.Recipe"*/-->
+                        <h1 class="panel-title" th:text="${recipe.description}">Recipe Description Here!</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h5>Categories:</h5>
+                            </div>
+                            <div class="col-md-9">
+                                <ul>
+                                    <li th:remove="all">cat one</li>
+                                    <li th:remove="all">cat two</li>
+                                    <li th:each="category : ${recipe.categories}"
+                                        th:text="${category.getDescription()}">cat three
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h5>Prep Time:</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p th:text="${(recipe.prepTime) + ' Min'}">30 min</p>
+                            </div>
+                            <div class="col-md-3">
+                                <h5>Difficulty:</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p th:text="${recipe.difficulty}">Easy</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h5>Cooktime:</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p th:text="${(recipe.cookTime) + ' Min'}">30 min</p>
+                            </div>
+                            <div class="col-md-3">
+                                <h5>Servings:</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p th:text="${recipe.servings}">4</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h5>Source:</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p th:text="${recipe.source}">30 min</p>
+                            </div>
+                            <div class="col-md-3">
+                                <h5>URL:</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p th:text="${recipe.url}">http://www.example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-md-11 ">
+                                <h1 class="panel-title">Ingredients</h1>
+                            </div>
+                            <div class="col-md-1">
+                                <a class="btn btn-default" href="#"
+                                   th:href="@{'/recipe/' + ${recipe.id} + '/ingredients'}" role="button">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul>
+                                    <li th:remove="all">1 Cup of milk</li>
+                                    <li th:remove="all">1 Teaspoon of chocolate</li>
+                                    <li th:each="ingredient : ${recipe.ingredients}"
+                                        th:text="${(ingredient.getAmount()  +
                       ' ' + ingredient.uom.getDescription() +
-                      ' - ' + ingredient.getDescription())}">1 Teaspoon of Sugar</li>
-                </ul>
-              </div>
+                      ' - ' + ingredient.getDescription())}">1 Teaspoon of Sugar
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Directions</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p th:text="${recipe.directions}">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                    elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+                                    et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+                                    nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+                                    justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                                    imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                                    Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+                                    eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+                                    enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
+                                    viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam
+                                    ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                                    rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero,
+                                    sit amet adipiscing sem neque sed ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Notes</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p th:text="${recipe.notes.getRecipeNotes()}">Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                                    rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                                    pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+                                    vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                                    eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                                    Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+                                    Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+                                    Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+                                    libero, sit amet adipiscing sem neque sed ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h1 class="panel-title" >Directions</h1>
-          </div>
-          <div class="panel-body">
-            <div class="row">
-              <div class="col-md-12">
-                <p th:text="${recipe.directions}">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h1 class="panel-title" >Notes</h1>
-          </div>
-          <div class="panel-body">
-            <div class="row">
-              <div class="col-md-12">
-                <p th:text="${recipe.notes.getRecipeNotes()}">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
 </body>
 </html>

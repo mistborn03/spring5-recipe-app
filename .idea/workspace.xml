@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cafa7f8-974d-40ae-a0b6-ac215633554e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/controllers/IngredientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/recipe/ingredient/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/controllers/IngredientControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/service/IngredientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/service/IngredientServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/recipe/ingredient/show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/service/IngredientServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/commands/IngredientCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/commands/IngredientCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/controllers/IngredientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/controllers/IngredientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/IngredientToIngredientCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/IngredientToIngredientCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/recipe/ingredient/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/recipe/ingredient/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/recipe/recipeform.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/recipe/recipeform.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/recipe/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/recipe/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/springframework/controllers/IngredientControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/controllers/IngredientControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +29,8 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="HTML File" />
         <option value="JUnit5 Test Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -82,8 +87,8 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="guru.springframework.controllers" />
       <recent name="guru.springframework.service" />
+      <recent name="guru.springframework.controllers" />
       <recent name="guru.springframework.converters" />
       <recent name="guru.springframework.repositories" />
       <recent name="guru.springframework.domain" />
@@ -266,7 +271,7 @@
       <workItem from="1623395576906" duration="4803000" />
       <workItem from="1623827741820" duration="2501000" />
       <workItem from="1623835930216" duration="24936000" />
-      <workItem from="1623994531286" duration="16407000" />
+      <workItem from="1623994531286" duration="21519000" />
     </task>
     <task id="LOCAL-00001" summary="adding JPA entities and relationships">
       <created>1622107013959</created>
@@ -338,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624276035710</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added list ingredients">
+      <created>1624293628876</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1624293628876</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,7 +366,8 @@
     <MESSAGE value="added integration test" />
     <MESSAGE value="added update recipe" />
     <MESSAGE value="added delete recipe" />
-    <option name="LAST_COMMIT_MESSAGE" value="added delete recipe" />
+    <MESSAGE value="added list ingredients" />
+    <option name="LAST_COMMIT_MESSAGE" value="added list ingredients" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

@@ -53,7 +53,7 @@
                             </tr>
                             <tr th:each="ingredient : ${recipe.ingredients}">
                                 <td th:text="${ingredient.id}"> 23</td>
-                                <td th:text="${ingredient.amount} + ' ' + ${ingredient.uom.getDescription()} +' ' + ${ingredient.getDescription()} + '/show'">
+                                <td th:text="${ingredient.amount} + ' ' + ${ingredient.uom.getDescription()} +' ' + ${ingredient.getDescription()} ">
                                     334
                                 </td>
                                 <td><a href="#" th:href="@{'/recipe/' +  ${recipe.id} + '/ingredient/' + ${ingredient.id} + '/show'}">View</a></td>

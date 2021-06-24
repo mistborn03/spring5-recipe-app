@@ -7,15 +7,10 @@
     <list default="true" id="6cafa7f8-974d-40ae-a0b6-ac215633554e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/controllers/IngredientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/controllers/IngredientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/domain/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/domain/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/domain/Ingredient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/domain/Notes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/domain/Notes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/domain/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/domain/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/domain/UnitOfMeasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/domain/UnitOfMeasure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/service/IngredientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/service/IngredientService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/service/IngredientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/service/IngredientServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/recipe/ingredient/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/recipe/ingredient/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/recipe/recipeform.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/recipe/recipeform.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/guru/springframework/controllers/IngredientControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/controllers/IngredientControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/springframework/service/IngredientServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/service/IngredientServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +122,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IngredientControllerTest.testListIngredients" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IngredientControllerTest.testDeleteIngredient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring5-recipe-app" />
       <extension name="coverage">
         <pattern>
@@ -137,23 +132,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="guru.springframework.controllers" />
       <option name="MAIN_CLASS_NAME" value="guru.springframework.controllers.IngredientControllerTest" />
-      <option name="METHOD_NAME" value="testListIngredients" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IngredientControllerTest.testUpdateIngredientForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring5-recipe-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="guru.springframework.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="guru.springframework.controllers" />
-      <option name="MAIN_CLASS_NAME" value="guru.springframework.controllers.IngredientControllerTest" />
-      <option name="METHOD_NAME" value="testUpdateIngredientForm" />
+      <option name="METHOD_NAME" value="testDeleteIngredient" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -183,6 +162,20 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="guru" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="guru.springframework in spring5-recipe-app" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring5-recipe-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guru.springframework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guru.springframework" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -222,18 +215,18 @@
     <list>
       <item itemvalue="Spring Boot.Spring5RecipeAppApplication" />
       <item itemvalue="JUnit.guru in spring5-recipe-app" />
-      <item itemvalue="JUnit.IngredientControllerTest.testListIngredients" />
-      <item itemvalue="JUnit.IngredientControllerTest.testUpdateIngredientForm" />
       <item itemvalue="JUnit.IngredientServiceImplTest" />
       <item itemvalue="JUnit.IngredientControllerTest" />
+      <item itemvalue="JUnit.IngredientControllerTest.testDeleteIngredient" />
+      <item itemvalue="JUnit.guru.springframework in spring5-recipe-app" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.guru.springframework in spring5-recipe-app" />
+        <item itemvalue="JUnit.IngredientControllerTest.testDeleteIngredient" />
         <item itemvalue="JUnit.guru in spring5-recipe-app" />
         <item itemvalue="JUnit.IngredientControllerTest" />
         <item itemvalue="JUnit.IngredientServiceImplTest" />
-        <item itemvalue="JUnit.IngredientControllerTest.testUpdateIngredientForm" />
-        <item itemvalue="JUnit.IngredientControllerTest.testListIngredients" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +262,7 @@
       <workItem from="1623395576906" duration="4803000" />
       <workItem from="1623827741820" duration="2501000" />
       <workItem from="1623835930216" duration="24936000" />
-      <workItem from="1623994531286" duration="32094000" />
+      <workItem from="1623994531286" duration="36610000" />
     </task>
     <task id="LOCAL-00001" summary="adding JPA entities and relationships">
       <created>1622107013959</created>
@@ -362,13 +355,21 @@
       <option name="project" value="LOCAL" />
       <updated>1624431950283</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add new ingredient">
+      <created>1624528074421</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1624528074421</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="adding JPA entities and relationships" />
     <MESSAGE value="Display List of Recipes" />
     <MESSAGE value="Refactoring with project lombok" />
@@ -381,7 +382,8 @@
     <MESSAGE value="added list ingredients" />
     <MESSAGE value="added view ingredient" />
     <MESSAGE value="added update ingredient" />
-    <option name="LAST_COMMIT_MESSAGE" value="added update ingredient" />
+    <MESSAGE value="add new ingredient" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new ingredient" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

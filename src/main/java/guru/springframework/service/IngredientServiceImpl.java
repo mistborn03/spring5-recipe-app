@@ -60,35 +60,47 @@ public class IngredientServiceImpl implements IngredientService {
 
     Optional<Recipe> recipeOptional = recipeRepository.findById(command.getRecipeId());
 
-    if(!recipeOptional.isPresent()){
+    if (!recipeOptional.isPresent()) {
 
-        log.error("recipe not found for id: " + command.getRecipeId());
-        return new IngredientCommand();
+      log.error("recipe not found for id: " + command.getRecipeId());
+      return new IngredientCommand();
     }
 
     Recipe recipe = recipeOptional.get();
-    Optional<Ingredient> ingredientOptional = recipe
-            .getIngredients()
-            .stream()
+    Optional<Ingredient> ingredientOptional =
+        recipe.getIngredients().stream()
             .filter(ingredient -> ingredient.getId().equals(command.getId()))
             .findFirst();
 
-    if(ingredientOptional.isPresent()){
-        Ingredient ingredientFound = ingredientOptional.get();
-        ingredientFound.setDescription(command.getDescription());
-        ingredientFound.setAmount(command.getAmount());
-        ingredientFound.setUom(unitOfMeasureRepository
-                .findById(command.getUom().getId())
-                .orElseThrow(() ->new RuntimeException("UOM not found")));
-    }else{
-        recipe.addIngredient(ingredientCommandToIngredient.convert(command));
+    if (ingredientOptional.isPresent()) {
+      Ingredient ingredientFound = ingredientOptional.get();
+      ingredientFound.setDescription(command.getDescription());
+      ingredientFound.setAmount(command.getAmount());
+      ingredientFound.setUom(
+          unitOfMeasureRepository
+              .findById(command.getUom().getId())
+              .orElseThrow(() -> new RuntimeException("UOM not found")));
+    } else {
+      Ingredient ingredient = ingredientCommandToIngredient.convert(command);
+      ingredient.setRecipe(recipe);
+      recipe.addIngredient(ingredient);
     }
 
     Recipe savedRecipe = recipeRepository.save(recipe);
 
-    return ingredientToIngredientCommand.convert(savedRecipe.getIngredients().stream()
-    .filter(recipeIngredients-> recipeIngredients.getId().equals(command.getId()))
-    .findFirst()
-    .get());
+    Optional<Ingredient> savedIngredientOptional = savedRecipe.getIngredients().stream()
+            .filter(recipeIngredient->recipeIngredient.getId().equals(command.getId()))
+            .findFirst();
+
+    if(!savedIngredientOptional.isPresent()){
+
+      savedIngredientOptional = savedRecipe.getIngredients().stream()
+              .filter(recipeIngredient -> recipeIngredient.getDescription().equals(command.getDescription()))
+              .filter(recipeIngredient -> recipeIngredient.getAmount().equals(command.getAmount()))
+              .filter(recipeIngredient -> recipeIngredient.getUom().getId().equals(command.getUom().getId()))
+              .findFirst();
+    }
+
+    return ingredientToIngredientCommand.convert(savedIngredientOptional.get());
   }
 }

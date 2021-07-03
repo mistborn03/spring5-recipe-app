@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cafa7f8-974d-40ae-a0b6-ac215633554e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/404error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/controllers/RecipeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/controllers/RecipeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/service/RecipeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/service/RecipeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guru/springframework/controllers/RecipeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/controllers/RecipeControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guru/springframework/service/RecipeServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/service/RecipeServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,11 +221,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.guru in spring5-recipe-app" />
         <item itemvalue="JUnit.RecipeControllerTest.testGetRecipeNotFound" />
         <item itemvalue="JUnit.RecipeServiceImplTest.getRecipeByIdTestNotFound" />
         <item itemvalue="JUnit.guru.springframework in spring5-recipe-app" />
         <item itemvalue="JUnit.ImageControllerTest.renderImageFromDB" />
-        <item itemvalue="JUnit.guru in spring5-recipe-app" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +264,7 @@
       <workItem from="1623994531286" duration="46792000" />
       <workItem from="1624720564011" duration="3236000" />
       <workItem from="1624776139306" duration="39000" />
-      <workItem from="1625309490864" duration="3737000" />
+      <workItem from="1625309490864" duration="4510000" />
     </task>
     <task id="LOCAL-00001" summary="adding JPA entities and relationships">
       <created>1622107013959</created>
@@ -390,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625311826693</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="display error data">
+      <created>1625313696265</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1625313696265</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +417,8 @@
     <MESSAGE value="delete ingredient" />
     <MESSAGE value="displaying images from DB" />
     <MESSAGE value="adding response status" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding response status" />
+    <MESSAGE value="display error data" />
+    <option name="LAST_COMMIT_MESSAGE" value="display error data" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

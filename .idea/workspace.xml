@@ -5,23 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cafa7f8-974d-40ae-a0b6-ac215633554e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/controllers/ImageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/service/ImageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/service/ImageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/guacamole400x400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/guacamole400x400WithX.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/tacos400x400.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/recipe/imageuploadform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/controllers/ImageControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/service/ImageServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/exceptions/NotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/commands/RecipeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/commands/RecipeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/controllers/IngredientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/controllers/IngredientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/controllers/RecipeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/controllers/RecipeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/RecipeToRecipeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/converters/RecipeToRecipeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/recipe/recipeform.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/recipe/recipeform.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/recipe/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/recipe/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/service/RecipeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/service/RecipeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/guru/springframework/controllers/RecipeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/controllers/RecipeControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/springframework/service/RecipeServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/service/RecipeServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +21,9 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -107,32 +95,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Spring5RecipeAppApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RecipeServiceImplTest.getRecipeByIdTestNotFound">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ImageControllerTest.getUploadForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring5-recipe-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="guru.springframework.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="guru.springframework.controllers" />
-      <option name="MAIN_CLASS_NAME" value="guru.springframework.controllers.ImageControllerTest" />
-      <option name="METHOD_NAME" value="getUploadForm" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,7 +123,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IngredientControllerTest.testDeleteIngredient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RecipeControllerTest.testGetRecipeNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring5-recipe-app" />
       <extension name="coverage">
         <pattern>
@@ -162,8 +132,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="guru.springframework.controllers" />
-      <option name="MAIN_CLASS_NAME" value="guru.springframework.controllers.IngredientControllerTest" />
-      <option name="METHOD_NAME" value="testDeleteIngredient" />
+      <option name="MAIN_CLASS_NAME" value="guru.springframework.controllers.RecipeControllerTest" />
+      <option name="METHOD_NAME" value="testGetRecipeNotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecipeServiceImplTest.getRecipeByIdTestNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring5-recipe-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guru.springframework.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guru.springframework.service" />
+      <option name="MAIN_CLASS_NAME" value="guru.springframework.service.RecipeServiceImplTest" />
+      <option name="METHOD_NAME" value="getRecipeByIdTestNotFound" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -230,19 +216,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.guru in spring5-recipe-app" />
-      <item itemvalue="JUnit.IngredientControllerTest.testDeleteIngredient" />
       <item itemvalue="JUnit.guru.springframework in spring5-recipe-app" />
-      <item itemvalue="JUnit.ImageControllerTest.getUploadForm" />
-      <item itemvalue="Spring Boot.Spring5RecipeAppApplication" />
       <item itemvalue="JUnit.ImageControllerTest.renderImageFromDB" />
+      <item itemvalue="Spring Boot.Spring5RecipeAppApplication" />
+      <item itemvalue="JUnit.RecipeControllerTest.testGetRecipeNotFound" />
+      <item itemvalue="JUnit.RecipeServiceImplTest.getRecipeByIdTestNotFound" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RecipeServiceImplTest.getRecipeByIdTestNotFound" />
+        <item itemvalue="JUnit.RecipeControllerTest.testGetRecipeNotFound" />
         <item itemvalue="JUnit.guru.springframework in spring5-recipe-app" />
         <item itemvalue="JUnit.ImageControllerTest.renderImageFromDB" />
         <item itemvalue="JUnit.guru in spring5-recipe-app" />
-        <item itemvalue="JUnit.ImageControllerTest.getUploadForm" />
-        <item itemvalue="JUnit.IngredientControllerTest.testDeleteIngredient" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +265,9 @@
       <workItem from="1623827741820" duration="2501000" />
       <workItem from="1623835930216" duration="24936000" />
       <workItem from="1623994531286" duration="46792000" />
-      <workItem from="1624720564011" duration="2639000" />
+      <workItem from="1624720564011" duration="3236000" />
+      <workItem from="1624776139306" duration="39000" />
+      <workItem from="1625309490864" duration="2314000" />
     </task>
     <task id="LOCAL-00001" summary="adding JPA entities and relationships">
       <created>1622107013959</created>
@@ -386,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624532777530</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="displaying images from DB">
+      <created>1624727120411</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1624727120411</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,7 +403,8 @@
     <MESSAGE value="added update ingredient" />
     <MESSAGE value="add new ingredient" />
     <MESSAGE value="delete ingredient" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete ingredient" />
+    <MESSAGE value="displaying images from DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="displaying images from DB" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

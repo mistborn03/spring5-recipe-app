@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cafa7f8-974d-40ae-a0b6-ac215633554e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/controllers/ControllerExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/controllers/RecipeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/controllers/RecipeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/springframework/controllers/ImageControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/controllers/ImageControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/springframework/controllers/RecipeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/controllers/RecipeControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +22,8 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -92,7 +96,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Spring5RecipeAppApplication">
+  <component name="RunManager" selected="JUnit.guru.springframework in spring5-recipe-app">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -104,18 +108,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImageControllerTest.renderImageFromDB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in spring5-recipe-app" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring5-recipe-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="guru.springframework.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="guru.springframework.controllers" />
-      <option name="MAIN_CLASS_NAME" value="guru.springframework.controllers.ImageControllerTest" />
-      <option name="METHOD_NAME" value="renderImageFromDB" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -214,18 +210,18 @@
     <list>
       <item itemvalue="JUnit.guru in spring5-recipe-app" />
       <item itemvalue="JUnit.guru.springframework in spring5-recipe-app" />
-      <item itemvalue="JUnit.ImageControllerTest.renderImageFromDB" />
       <item itemvalue="Spring Boot.Spring5RecipeAppApplication" />
       <item itemvalue="JUnit.RecipeControllerTest.testGetRecipeNotFound" />
       <item itemvalue="JUnit.RecipeServiceImplTest.getRecipeByIdTestNotFound" />
+      <item itemvalue="JUnit.All in spring5-recipe-app" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.guru.springframework in spring5-recipe-app" />
+        <item itemvalue="JUnit.All in spring5-recipe-app" />
         <item itemvalue="JUnit.guru in spring5-recipe-app" />
         <item itemvalue="JUnit.RecipeControllerTest.testGetRecipeNotFound" />
         <item itemvalue="JUnit.RecipeServiceImplTest.getRecipeByIdTestNotFound" />
-        <item itemvalue="JUnit.guru.springframework in spring5-recipe-app" />
-        <item itemvalue="JUnit.ImageControllerTest.renderImageFromDB" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +260,7 @@
       <workItem from="1623994531286" duration="46792000" />
       <workItem from="1624720564011" duration="3236000" />
       <workItem from="1624776139306" duration="39000" />
-      <workItem from="1625309490864" duration="4510000" />
+      <workItem from="1625309490864" duration="6281000" />
     </task>
     <task id="LOCAL-00001" summary="adding JPA entities and relationships">
       <created>1622107013959</created>
@@ -392,7 +388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625313696265</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="number format exception handling">
+      <created>1625315136837</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1625315136837</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +421,8 @@
     <MESSAGE value="displaying images from DB" />
     <MESSAGE value="adding response status" />
     <MESSAGE value="display error data" />
-    <option name="LAST_COMMIT_MESSAGE" value="display error data" />
+    <MESSAGE value="number format exception handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="number format exception handling" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

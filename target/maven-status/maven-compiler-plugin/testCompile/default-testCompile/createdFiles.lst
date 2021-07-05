@@ -1,9 +1,14 @@
 guru/springframework/converters/RecipeToRecipeCommandTest.class
 guru/springframework/converters/IngredientCommandToIngredientTest.class
+guru/springframework/controllers/IngredientControllerTest.class
+guru/springframework/controllers/ImageControllerTest.class
 guru/springframework/converters/CategoryToCategoryCommandTest.class
 guru/springframework/repositories/UnitOfMeasureRepositoryIT.class
 guru/springframework/service/RecipeServiceIT.class
+guru/springframework/service/IngredientServiceImplTest.class
 guru/springframework/converters/UnitOfMeasureCommandToUnitOfMeasureTest.class
+guru/springframework/service/UnitOfMeasureImplTest.class
+guru/springframework/service/ImageServiceImplTest.class
 guru/springframework/converters/RecipeCommandToRecipeTest.class
 guru/springframework/controllers/IndexControllerTest.class
 guru/springframework/converters/UnitOfMeasureToUnitOfMeasureCommandTest.class
